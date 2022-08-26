@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>โปรแกรมคํานวณนํ้าหนักเหล็ก</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body > <center>
+    <h1 class="head">โปรแกรมคํานวณนํ้าหนักเหล็ก</h1>
+    <div class="main-content">
+      <div>
+      <h2>เหล็กกลมและเส้นลวดกลม</h2>
+    <p>เส้นผ่าศูนย์กลาง (ซม.) x เส้นผ่าศูนย์กลาง (ซม.) x ความยาว (ซม.) x 0.0062 = น้ำหนัก (กก.)
+    </p>
+    <input id = "v1" type="text">
+    <input id = "v2" type="text">
+    <input id = "v3" type="text">
+    <button onclick="cal1()">คํานวณ</button>
+    <button onclick="reload()">ล้าง</button>
+    <p id="h1"></p>
+     </div>
+    </div>
+
+    <div>
+      <h2>เหล็กสี่เหลี่ยม</h2>
+    <p>ขนาด (ซม.) x ขนาด (ซม.) x ความยาว (ซม.) x 0.0079 = น้ำหนัก (กก.)
+
+    </p>
+    <input id = "v1" type="text">
+    <input id = "v2" type="text">
+    <input id = "v3" type="text">
+    <button onclick="cal2()">คํานวณ</button>
+    <button onclick="reload()">ล้าง</button>
+    <p id="h2"></p>
+    </div>
+
+    <div>
+      <h2>เหล็กหกเหลี่ยม</h2>
+    <p>ขนาด (ซม.) x ขนาด (ซม.) x ความยาว (ซม.) x 0.0068 = น้ำหนัก (กก.)
+    </p>
+    <input id = "v1" type="text">
+    <input id = "v2" type="text">
+    <input id = "v3" type="text">
+    <button onclick="cal3()">คํานวณ</button>
+    <button onclick="reload()">ล้าง</button>
+    <p id="h3"></p>
+    </div>
+
+    <div>
+      <h2>เหล็กแปดเหลี่ยม</h2>
+    <p>ขนาด (ซม.) x ขนาด (ซม.) x ความยาว (ซม.) x 0.0065 = น้ำหนัก (กก.)
+    </p>
+    <input id = "v1" type="text">
+    <input id = "v2" type="text">
+    <input id = "v3" type="text">
+    <button onclick="cal4()">คํานวณ</button>
+    <button onclick="reload()">ล้าง</button>
+    <p id="h4"></p>
+    </div>
+
+    <div>
+      <h2>เหล็กแบน</h2>
+    <p>ความหนา (ซม.) x ความกว้าง (ซม.) x ความยาว (ซม.) x 0.0079 = น้ำหนัก (กก.)
+    </p>
+    <input id = "v1" type="text">
+    <input id = "v2" type="text">
+    <input id = "v3" type="text">
+    <button onclick="cal5()">คํานวณ</button>
+    <button onclick="reload()">ล้าง</button>
+    <p id="h5"></p>
+    </div>
+
+    <div>
+      <h2>เหล็กแผ่น</h2>
+    <p>ความหนา (มม.) x ความกว้าง (ฟุต) x ความยาว (ฟุต) x 0.7293 = น้ำหนัก (กก.)
+    </p>
+    <input id = "v1" type="text">
+    <input id = "v2" type="text">
+    <input id = "v3" type="text">
+    <button onclick="cal6()">คํานวณ</button>
+    <button onclick="reload()">ล้าง</button>
+    <p id="h6"></p>
+    </div>
+
+  </center>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>

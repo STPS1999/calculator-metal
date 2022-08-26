@@ -1,0 +1,24 @@
+﻿html,body{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+.main-content{
+    max-width: 700px;
+    margin: auto;
+}
+
+div{
+    background-color: darkgrey;
+    margin: auto;
+    display: inline-block;
+    
+}
+
+
+.head{
+    background-color: brown;
+    padding: auto;
+    margin-bottom: auto;
+    
+}
